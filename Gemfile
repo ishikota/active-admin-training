@@ -19,6 +19,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'activeadmin'
+gem 'active_admin_theme'
 
 # Plus integrations with:
 gem 'devise'
