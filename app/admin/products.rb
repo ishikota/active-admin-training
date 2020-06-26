@@ -14,6 +14,17 @@ ActiveAdmin.register Product do
     f.inputs :organization_id
     f.actions
   end
+
+  batch_action "どりゃーー" do |ids|
+    Product.where(id: ids).each do |product|
+      Rails.logger.info("値段だよー#{product.price}")
+    end
+  end
+  batch_action "うりゃーー" do |ids|
+    Product.where(id: ids).each do |product|
+      Rails.logger.info("値段だよー#{product.price}")
+    end
+  end
   #
   # or
   #
